@@ -27,7 +27,7 @@ for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener('mouseleave', (event) => {
     event.target.style.color = 'black'
   })
-  navLinks[i].preventDefault()
+  
 }
 
 // Two: Keydown spacebar changes the text color and background color
@@ -59,6 +59,7 @@ for (let i = 0; i < allImages.length; i++) {
 window.addEventListener('load', () => { alert('Welcome to the FUN BUS!') })
 
 // Six: When focus in on nav links the links grow and shrink
+const allButtons = document.querySelectorAll('.btn')
 
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener('focus', (event) => {
