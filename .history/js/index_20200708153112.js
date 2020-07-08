@@ -88,7 +88,7 @@ headerArea.addEventListener('mouseenter', (event) => {
 headerArea.addEventListener('mouseleave', (event) => {
   event.target.style.color = 'white'
   event.target.style.backgroundColor = 'black'
-  navLinks.forEach(links => {
+  navLinks.forEach( links => { 
     links.style.color = 'white';
   })
 })
@@ -109,16 +109,17 @@ label.textContent = 'EMail'
 input.type = 'email'
 submit.type = 'Submit'
 
+
 homeContainer.appendChild(newSection)
 newSection.appendChild(label)
 newSection.appendChild(input)
 newSection.appendChild(submit)
 newSection.style.display = 'none'
 
-signUpButtons.forEach(buttons => {
+signUpButtons.forEach( buttons => {
   buttons.addEventListener('click', () => {
     newSection.style.display = 'inline-block'
-  })
+  } )
 })
 
 // Nine: click submit button alert comes up that email was sent successfully and hide email input
@@ -130,7 +131,7 @@ submit.addEventListener('click', () => {
 // Ten: Mouse over heading and increase fontsize goes away with mouse off
 const allSubHeadings = document.querySelectorAll('h2')
 
-allSubHeadings.forEach(headings => {
+allSubHeadings.forEach( headings => {
   headings.addEventListener('mouseover', (event) => {
     event.target.style.fontSize = '56px'
   })
