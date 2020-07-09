@@ -10,12 +10,12 @@
 * [ ] `resize`
 * [ ] `scroll`
 * [ ] `select`
-* [x] `dblclick`
+* [ ] `dblclick`
 
 Using the 10 unique events, find ways to update the DOM in creative ways. For example you could change colors, animate objects, remove objects, etc.
 
-* [x] Nest two similar events somewhere in the site and prevent the event propagation properly
-* [x] Stop the navigation items from refreshing the page by using `preventDefault()`
+* [ ] Nest two similar events somewhere in the site and prevent the event propagation properly
+* [ ] Stop the navigation items from refreshing the page by using `preventDefault()`
 */
 
 // One: Nav links change color when hovered over
@@ -59,12 +59,12 @@ allImages.forEach(images => {
 })
 
 // Five: When page loads alert box welcomes user to the page
-window.addEventListener('load', () => { alert('Welcome to the FUN BUS!') })
+// window.addEventListener('load', () => { alert('Welcome to the FUN BUS!') })
 
 // Six: When focus in on nav links the links grow and shrink
 
 navLinks.forEach(links => {
-  links.preventDefault // Prevent Default of links
+  links.preventDefault // Prevent Default 
   links.addEventListener('focus', (event) => {
     event.target.style.fontSize = '20px'
   })

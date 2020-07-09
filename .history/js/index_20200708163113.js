@@ -10,7 +10,7 @@
 * [ ] `resize`
 * [ ] `scroll`
 * [ ] `select`
-* [x] `dblclick`
+* [ ] `dblclick`
 
 Using the 10 unique events, find ways to update the DOM in creative ways. For example you could change colors, animate objects, remove objects, etc.
 
@@ -59,7 +59,7 @@ allImages.forEach(images => {
 })
 
 // Five: When page loads alert box welcomes user to the page
-window.addEventListener('load', () => { alert('Welcome to the FUN BUS!') })
+// window.addEventListener('load', () => { alert('Welcome to the FUN BUS!') })
 
 // Six: When focus in on nav links the links grow and shrink
 
